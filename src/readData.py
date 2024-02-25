@@ -1,6 +1,7 @@
 import sqlite3
+import constVaribel
 def read():
-    conn = sqlite3.connect("database/test_musicdatabase.db")
+    conn = sqlite3.connect(constVaribel.database)
     c = conn.cursor()
 
     c.execute("SELECT * FROM tracks")

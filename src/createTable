@@ -1,6 +1,6 @@
 import sqlite3
 def create_database_and_table():
-    conn = sqlite3.connect("database/test_musicdatabase.db")
+    conn = sqlite3.connect("database/musicdatabase.db")
     c = conn.cursor()
     c.execute("""CREATE TABLE IF NOT EXISTS tracks(
             id INTEGER PRIMARY KEY AUTOINCREMENT,

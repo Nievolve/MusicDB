@@ -1,6 +1,7 @@
 import sqlite3
+import constVaribel
 def remove():
-    conn = sqlite3.connect("database/test_musicdatabase.db")
+    conn = sqlite3.connect(constVaribel.database)
 
     cursor = conn.cursor()
 #Table remains but ALL data i wiped
