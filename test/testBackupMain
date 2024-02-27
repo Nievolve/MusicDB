@@ -1,0 +1,9 @@
+import os
+import constVaribel
+subfolder = []
+    # Forloop which polulate subfolder list with name of subfolders.
+for folders in os.listdir(constVaribel.backupPath): 
+    subfolder.append(folders)
+
+for k in subfolder:
+    print(k)
